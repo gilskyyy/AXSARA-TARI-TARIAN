@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tari Bali</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #fff59d 0%, #ffe082 100%); /* Gradien kuning */
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+        }
+
+        * {
+            -webkit-user-select: text; /* Mengizinkan penyalinan di Chrome, Safari, Opera */
+            -moz-user-select: text; /* Mengizinkan penyalinan di Firefox */
+            -ms-user-select: text; /* Mengizinkan penyalinan di Internet Explorer/Edge */
+            user-select: text; /* Mengizinkan penyalinan di browser modern */
+        }
+
+        .container {
+            max-width: 800px;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.9); /* Latar belakang transparan */
+            border-radius: 12px;
+            box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            animation: fadeIn 1s ease-in-out; /* Animasi muncul */
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .logo {
+            margin-bottom: 20px; 
+            max-width: 200px; 
+            height: auto; 
+            display: block; 
+            margin-left: auto; 
+            margin-right: auto; 
+            animation: slideIn 1s ease-in-out; /* Animasi slide in untuk logo */
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h1 {
+            color: #fbc02d; /* Warna judul kuning */
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            animation: bounceIn 1s ease; /* Animasi bounce untuk judul */
+        }
+
+        @keyframes bounceIn {
+            0% {
+                transform: scale(0);
+                opacity: 0;
+            }
+            60% {
+                transform: scale(1.2);
+                opacity: 1;
+            }
+            80% {
+                transform: scale(0.9);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+            color: #616161; /* Warna teks deskripsi */
+            animation: fadeInUp 1s ease-in-out; /* Animasi muncul untuk deskripsi */
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .video-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .video-list li {
+            margin: 15px 0;
+            display: flex; 
+            align-items: center; 
+            border: 2px solid #fbc02d; 
+            border-radius: 10px; 
+            padding: 10px; 
+            transition: transform 0.3s, box-shadow 0.3s; 
+            overflow: hidden; 
+            animation: fadeIn 1s ease-in-out; /* Animasi muncul untuk setiap video */
+        }
+
+        .video-list img {
+            max-width: 100px; 
+            height: auto; 
+            margin-right: 10px; 
+            border-radius: 5px; 
+        }
+
+        .video-list a {
+            text-decoration: none;
+            color: #f57f20; /* Warna teks tautan oranye */
+            font-weight: bold;
+            transition: color 0.3s; 
+            font-size: 1.1em;
+        }
+
+        .video-list a:hover {
+            color: #d32f2f; /* Warna teks saat hover */
+        }
+
+        footer {
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #777; /* Warna footer */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="LOGO.jpeg" alt="Logo" class="logo">
+        <h1>Tari Bali</h1>
+        <p>Check out these interesting videos about Balinese dance!</p>
+        <ul class="video-list">
+            <li>
+                <img src="thumbnail1.png" alt="Thumbnail TARI PENDET">
+                <div>
+                    <a href="https://youtu.be/IyktA191_1g?si=qwGXJnAd-Ymu8hey" target="_blank">TARI PENDET</a>
+                    <p>Tari Pendet adalah tarian sambutan yang melambangkan rasa syukur dan penghormatan kepada Tuhan.</p>
+                </div>
+            </li>
+            <li>
+                <img src="thumbnail2.png" alt="Thumbnail TARI PUSPANJALI">
+                <div>
+                    <a href="https://youtu.be/8RpE08_-Axo?si=NaMrreXxlRJ7Gq3q" target="_blank">TARI PUSPANJALI</a>
+                    <p>Tari Puspanjali merupakan tarian yang menggambarkan penghormatan kepada dewa-dewa dalam agama Hindu.</p>
+                </div>
+            </li>
+            <li>
+                <img src="thumbnail3.png" alt="Thumbnail TARI GOPALA">
+                <div>
+                    <a href="https://youtu.be/Abgexp60O58?si=6lYkzYEfPGsX5o4U" target="_blank">TARI GOPALA</a>
+                    <p>Tari Gopala menggambarkan keceriaan dan kegembiraan dalam kehidupan sehari-hari.</p>
+                </div>
+            </li>
+            <li>
+                <img src="thumbnail4.png" alt="Thumbnail TARI JANGER">
+                <div>
+                    <a href="https://youtu.be/1ayRoe4ajhg?si=topNBf1czKsrYCGq" target="_blank">TARI JANGER</a>
+                    <p>Tari Janger adalah tarian yang melibatkan banyak penari dan mengisahkan interaksi sosial dalam masyarakat.</p>
+                </div>
+            </li>
+            <li>
+                <img src="thumbnail5.png" alt="Thumbnail TARI BARIS">
+                <div>
+                    <a href="https://youtu.be/0vhFFifYLf4?si=-C66VdV9cVJCEMEq" target="_blank">TARI BARIS</a>
+                    <p>Tari Baris adalah tarian yang melambangkan keberanian dan keteguhan hati.</p>
+                </div>
+            </li>
+        </ul>
+        <footer>AXSARA</footer>
+    </div>
+
+</body>
+</html>
